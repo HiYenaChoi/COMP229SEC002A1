@@ -1,0 +1,65 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+   
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to <%= title %> page</h1>
+    <head>
+        <style>
+            /* CSS 스타일을 여기에 추가합니다. */
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
+            .welcome-message {
+                font-size: 24px;
+                margin-top: 50px;
+            }
+            .redirect-button {
+                background-color: pink;
+                color: #fff;
+                padding: 10px 20px;
+                font-size: 18px;
+                border: none;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="welcome-message">
+            <p>Hello! 안녕하세요!</p>
+            <p>Welcome to my portfolio!</p>
+        </div>
+        <div class="button-container">
+            <button class="redirect-button" onclick="redirectToAboutMe()">Move to About Me</button>
+            <button class="redirect-button" onclick="redirectToContactMe()">Move to Contact Me</button>
+            <button class="redirect-button" onclick="redirectToMyProjects()">Move to My Projects</button>
+            <button class="redirect-button" onclick="redirectToMyServices()">Move to My Services</button>
+        </div>
+        
+    
+        <script>
+            // JavaScript 함수를 추가하여 버튼을 클릭했을 때 About Me 페이지로 이동합니다.
+            function redirectToAboutMe() {
+                window.location.href = '/about'; // About Me 페이지의 경로를 여기에 입력합니다.
+            }
+            function redirectToContactMe() {
+                window.location.href = '/contact'; // About Me 페이지의 경로를 여기에 입력합니다.
+            }
+            function redirectToMyProjects() {
+                window.location.href = '/products'; // About Me 페이지의 경로를 여기에 입력합니다.
+            }
+            function redirectToMyServices() {
+                window.location.href = '/services'; // About Me 페이지의 경로를 여기에 입력합니다.
+            }
+        </script>
+    </body>    
+    </div>
+    </main>
+    <!--bottom nav-->
+   
+   
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>

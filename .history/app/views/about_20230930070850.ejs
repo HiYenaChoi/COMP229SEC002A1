@@ -1,0 +1,36 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+   
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to <%= title %> page</h1>
+    <div style="padding-top: 20px;">
+      <h2>About me</h2>
+      <img src="photo.jpg" />
+      <table>
+          <tr> 
+              <td>Name: </td>
+              <td>Anthony D'costa</td>
+          </tr>
+          <tr> 
+              <td valign="top">About me: </td>
+              <td>
+                  My name is Anthony D'costa. I'm an B.S. student at University of Sample Computer Science and Mathematics Department. I was born and raised in Chandigarh, India. <br>
+                  I did senior schooling from Chandigarh Convent School, India.  <br>
+                  I like to travel. I believe travelling gives you a new perspective to everything. You get to know a lot about the different cultures, the cuisines, their history, the language and all the small unique things every place has to offer.
+              </td>
+          </tr>
+          <tr> 
+              <td>Resume: </td>
+              <td><a href="sample_resume.pdf">Click Here</a></td>
+          </tr>
+      </table>
+    </div>
+    </main>
+    <!--bottom nav-->
+   
+   
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>

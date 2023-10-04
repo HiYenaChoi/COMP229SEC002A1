@@ -1,0 +1,54 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+   
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to <%= title %> page</h1>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            /* CSS 스타일을 여기에 추가합니다. */
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
+            .welcome-message {
+                font-size: 24px;
+                margin-top: 50px;
+            }
+            .redirect-button {
+                background-color: #007bff;
+                color: #fff;
+                padding: 10px 20px;
+                font-size: 18px;
+                border: none;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="welcome-message">
+            <p>환영합니다! 이 웹사이트는 여러분을 위한 포트폴리오입니다.</p>
+            <p>미션 스테이트먼트: 우리의 목표는 뛰어난 웹 개발 프로젝트를 공유하는 것입니다.</p>
+        </div>
+        <button class="redirect-button" onclick="redirectToAboutMe()">Move to About Me</button>
+    
+        <script>
+            // JavaScript 함수를 추가하여 버튼을 클릭했을 때 About Me 페이지로 이동합니다.
+            function redirectToAboutMe() {
+                window.location.href = 'about.ejs'; // About Me 페이지의 경로를 여기에 입력합니다.
+            }
+        </script>
+    </body>
+    </html>
+    
+    </div>
+    </main>
+    <!--bottom nav-->
+   
+   
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>

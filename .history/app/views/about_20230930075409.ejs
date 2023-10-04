@@ -1,0 +1,37 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+   
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4"><%= title %> Me</h1>
+    <div style="padding-top: 20px;">
+      <img src="../img/photo.jpg" style="height: 300px;"/>
+      <table>
+          <tr> 
+              <td>Name: </td>
+              <td>Yena Choi</td>
+          </tr>
+          <tr> 
+              <td valign="top">About me: </td>
+              <td>
+                  My name is Yena Choi. I'm s Software Engineering Technician student at Centennial College. I was born and raised in Seoul, Korea. <br>
+                  I did senior schooling from Suwon Science College, Korea.  <br>
+                  I enjoy reading books. I believe that books are always our closest friends and can become mentors in life. <br>
+                  Here is one of my favorite book quotes: Loneliness, I believe, isn't something that simply disappears overnight. It's more like a constant companion, akin to a shadow that walks beside us throughout our lives. However, there are times when we need something to comfort us, and I'm currently embracing my loneliness in a healthy way, thanks to the factors I mentioned earlier. <br>
+                  If you're curious about the content of this book, <a class="nav-link" href="/contact"><i class="fa-solid fa-address-book"></i><span style="color: blue;">Contact Me</span></a>.
+              </td>
+          </tr>
+          <tr> 
+              <td>Resume: </td>
+              <td><a href="sample_resume.pdf">Click Here</a></td>
+          </tr>
+      </table>
+    </div>
+    </main>
+    <!--bottom nav-->
+   
+   
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>
